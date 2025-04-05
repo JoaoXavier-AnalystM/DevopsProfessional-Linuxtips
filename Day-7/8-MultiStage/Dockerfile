@@ -1,0 +1,9 @@
+FROM golang:1.18
+
+WORKDIR /app
+COPY . ./
+
+RUN go mod init hello
+RUN go build -o /app/hello
+
+CMD ["/app/hello"]
