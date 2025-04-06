@@ -1,8 +1,8 @@
 terraform {
   backend "s3" {
-    bucket = "descomplicando-terraform-turma-2024"
-    key    = "aula_output"
-    region = "us-east-1"
+    bucket = "devops-professional-jx"
+    key    = "aula_output_1"
+    region = "us-east-2"
   }
   required_providers {
     aws = {
@@ -14,5 +14,7 @@ terraform {
 
 # Configure the AWS Provider
 provider "aws" {
-  region = "us-east-1"
+  region = "us-east-2"
 }
+
+

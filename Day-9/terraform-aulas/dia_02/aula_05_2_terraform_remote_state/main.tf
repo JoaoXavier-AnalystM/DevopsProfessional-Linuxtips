@@ -28,9 +28,9 @@ resource "aws_instance" "web" {
 data "terraform_remote_state" "aula_output" {
   backend = "s3"
   config = {
-    bucket = "descomplicando-terraform-turma-2024"
-    key    = "aula_output"
-    region = "us-east-1"
+    bucket = "devops-professional-jx"
+    key    = "aula_output_1"
+    region = "us-east-2"
   }
 }
 
