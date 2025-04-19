@@ -21,4 +21,6 @@ ENV PATH="/home/nonroot/.local/bin:$PATH"
 
 USER nonroot
 
+EXPOSE 5000
+
 ENTRYPOINT ["flask", "run", "--host=0.0.0.0"]
