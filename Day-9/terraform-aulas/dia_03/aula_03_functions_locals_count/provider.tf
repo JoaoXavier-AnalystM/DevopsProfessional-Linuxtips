@@ -1,8 +1,8 @@
 terraform {
   backend "s3" {
-    bucket = "descomplicando-terraform-turma-2024"
+    bucket = "devops-professional-jx"
     key    = "aula_functions_locals_count"
-    region = "us-east-1"
+    region = "us-east-2"
   }
   required_providers {
     aws = {
