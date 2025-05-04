@@ -16,7 +16,7 @@ data "aws_ami" "ubuntu" {
 
 resource "aws_instance" "web" {
   ami           = var.ami
-  instance_type = "t3.micro"
+  instance_type = "t2.micro"
 
   tags = {
     Name       = var.nome
@@ -38,7 +38,7 @@ resource "aws_instance" "web" {
 
 resource "aws_instance" "bd" {
   ami           = var.ami_bd
-  instance_type = "t3.micro"
+  instance_type = "t2.micro"
 
   tags = {
     Name       = var.nome

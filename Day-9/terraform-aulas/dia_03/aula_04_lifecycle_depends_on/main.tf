@@ -1,7 +1,7 @@
 module "projetob" {
   source      = "./instancias"
-  nome        = "projetoA"
+  nome        = "projetoLifecycle"
   environment = "Develop"
-  ami         = "ami-0b6278baa6691172d"
-  ami_bd      = "ami-0e001c9271cf7f3b9"
+  ami         = "ami-04f167a56786e4b09"
+  ami_bd      = "ami-0c3b809fcf2445b6a"
 }
